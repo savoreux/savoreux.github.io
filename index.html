@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>savoreux, open source projects by David Handy</title>
+<meta name="description" content="Open source projects by David Handy, built from the heart.">
+<meta name="theme-color" content="#1b1d20">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://savoreux.github.io/">
+<meta property="og:title" content="savoreux, open source projects by David Handy">
+<meta property="og:description" content="Open source projects by David Handy, built from the heart.">
+<meta property="og:url" content="https://savoreux.github.io/">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <a class="profile" href="https://github.com/savoreux">
+    <span class="profile__mark">savoreux</span>
+    <span class="profile__reveal">See profile
+      <svg class="profile__arrow" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 11.5l7-7M5.5 4.5h6v6"/></svg>
+    </span>
+  </a>
+</nav>
+
+<main id="top">
+  <header class="hero container">
+    <h1 class="dodge" id="headline">I build open source projects from the heart.</h1>
+    <p class="lead">Making open source projects the greatest ever.</p>
+  </header>
+
+  <section class="index container" id="projects" aria-labelledby="projects-h">
+    <h2 id="projects-h" class="visually-hidden">Projects</h2>
+    <div class="ledger">
+      <div class="ledger__head" aria-hidden="true">
+        <span></span><span>Project</span><span>What it is</span><span>Runs on</span>
+      </div>
+      <article class="row">
+        <span class="row__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9h18M6.5 6.75h.01M9 6.75h.01"/><path d="M12 12v4.5M9.75 14.25 12 16.5l2.25-2.25"/></svg></span>
+        <h3 class="row__title"><a class="row__name" href="https://savoreux.github.io/winsta/">Winsta</a></h3>
+        <p class="row__what">A free app manager for Windows: install, update and roll back apps through winget.</p>
+        <span class="row__platform">Windows app</span>
+      </article>
+      <article class="row">
+        <span class="row__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5h17M3.5 19.5h17"/><path d="M6 7.5v9M10 7.5v9M14 7.5v9M18 7.5v9"/></svg></span>
+        <h3 class="row__title"><a class="row__name" href="https://ensiklopedia-bazi.pages.dev/">BaZi Encyclopedia</a></h3>
+        <p class="row__what">The Four Pillars of Destiny for beginners, with a birth chart calculator and almanac.</p>
+        <span class="row__platform">Web</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="support-band" aria-labelledby="support-h">
+    <div class="container support-band__inner">
+      <div>
+        <h2 id="support-h">Like what I build?</h2>
+        <p>Your support keeps these projects free and open.</p>
+      </div>
+      <div class="actions">
+      <details class="support">
+        <summary class="btn btn--pill">Support me
+          <svg class="support__caret" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+        </summary>
+        <ul class="support__menu">
+          <li><a href="https://saweria.co/davidhandy"><span>Saweria</span><small>From Indonesia: QRIS and e&#8209;wallets</small></a></li>
+          <li><a href="https://ko-fi.com/savoreux"><span>Ko-fi</span><small>From anywhere: card or PayPal</small></a></li>
+        </ul>
+      </details>
+      <a class="btn btn--pill" href="mailto:handydavid418@gmail.com">Contact me</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="container colophon__grid">
+    <div>
+      <p class="colophon__mark">savoreux</p>
+      <p>Built and kept from the heart by @davidhandya</p>
+    </div>
+    <div>
+      <h3>Elsewhere</h3>
+      <ul>
+        <li><a href="https://github.com/savoreux">GitHub</a></li>
+        <li><a href="https://davidartfolio.pages.dev/">Artfolio</a></li>
+        <li><a href="https://ensiklopedia-bazi.pages.dev/">BaZi Encyclopedia</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Email</h3>
+      <p><a href="mailto:handydavid418@gmail.com">handydavid418@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* headline letters lean away from the pointer */
+  const head = document.getElementById('headline');
+  const text = head.textContent;
+  head.setAttribute('aria-label', text);
+  head.textContent = '';
+  const letters = [];
+  text.split(' ').forEach((word, wi, all) => {
+    const w = document.createElement('span'); w.className = 'dodge__word'; w.setAttribute('aria-hidden', 'true');
+    [...word].forEach((ch) => { const s = document.createElement('span'); s.className = 'dodge__ch'; s.textContent = ch; w.appendChild(s); letters.push(s); });
+    head.appendChild(w); if (wi < all.length - 1) head.appendChild(document.createTextNode(' '));
+  });
+  const calm = matchMedia('(prefers-reduced-motion: reduce)');
+  const hero = head.closest('.hero');
+  const push = (x, y) => {
+    if (calm.matches) return;
+    const R = Math.max(80, parseFloat(getComputedStyle(head).fontSize) * 1.4);
+    for (const s of letters) {
+      const r = s.getBoundingClientRect(); const dx = r.left + r.width / 2 - x, dy = r.top + r.height / 2 - y, d = Math.hypot(dx, dy);
+      if (d < R) { const f = 1 - d / R, k = R / 110; s.style.transform = `translate(${(dx / (d || 1) * f * 14 * k).toFixed(1)}px, ${(dy / (d || 1) * f * 22 * k).toFixed(1)}px) rotate(${(dx / (d || 1) * f * -12).toFixed(1)}deg)`; s.classList.add('is-hot'); }
+      else if (s.classList.contains('is-hot')) { s.style.transform = ''; s.classList.remove('is-hot'); }
+    }
+  };
+  const settle = () => letters.forEach((s) => { s.style.transform = ''; s.classList.remove('is-hot'); });
+  hero.addEventListener('pointermove', (e) => push(e.clientX, e.clientY));
+  hero.addEventListener('pointerleave', settle);
+  hero.addEventListener('pointerup', (e) => { if (e.pointerType !== 'mouse') settle(); });
+  hero.addEventListener('pointercancel', settle);
+
+  const profile = document.querySelector('.profile');
+  const measure = () => {
+    const r = profile.querySelector('.profile__reveal');
+    const gap = parseFloat(getComputedStyle(profile).columnGap) || 0;
+    profile.style.setProperty('--rw', (r.offsetWidth + gap) + 'px');
+    profile.classList.add('is-measured');
+  };
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(measure);
+  const support = document.querySelector('.support');
+  document.addEventListener('click', (e) => { if (support.open && !support.contains(e.target)) support.open = false; });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && support.open) { support.open = false; support.querySelector('summary').focus(); } });
+</script>
+</body>
+</html>
