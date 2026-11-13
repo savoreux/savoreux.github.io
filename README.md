@@ -8,10 +8,17 @@ Live at https://savoreux.github.io
 
 - [Winsta](https://savoreux.github.io/winsta/): a free app manager for Windows
 - [BaZi Encyclopedia](https://ensiklopedia-bazi.pages.dev/): the Four Pillars of Destiny for beginners
+- [Menara Kota](https://menara-kota.pages.dev/): a free browser tower-stacking game
 
 ## Adding a project
 
 Copy one `<article class="row">` block in `index.html`, change the link, name, description and "Runs on" text, and push.
+
+Pick the icon by what the project is, copying the `<svg>` from an existing row:
+
+- Apps (Windows app and the like): the apps icon, as on Winsta
+- Web: the browser icon, as on BaZi Encyclopedia
+- Game: the game controller icon, as on Menara Kota
 
 ## Support
 
